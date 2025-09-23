@@ -22,15 +22,15 @@ class BankAccount:
 
 account = BankAccount("Alice", 1000)
 
-# Accessing public attribute
-print(account.owner)  # Output: Alice
 
-# Accessing private attribute (will raise an error)
-# print(account.__balance)  # AttributeError
+print(account.owner)  
 
-# Using getter method
-print(account.get_balance())  # Output: 1000
 
-# Using methods to modify private attribute
-print(account.deposit(500))   # Output: Deposited 500. New balance: 1500
-print(account.withdraw(200))  # Output: Withdrew 200. New balance: 1300
+
+
+
+print(account.get_balance()) 
+
+
+print(account.deposit(500))   
+print(account.withdraw(200))  
