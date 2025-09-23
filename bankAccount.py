@@ -1,14 +1,11 @@
-# Try understanding this on your own
 class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
-        self.__balance = balance  # Private attribute
+        self.__balance = balance 
 
-    # Getter method to access private attribute
     def get_balance(self):
         return self.__balance
-
-    # Setter method to modify private attribute
+        
     def deposit(self, amount):
         if amount > 0:
             self.__balance += amount
@@ -23,7 +20,6 @@ class BankAccount:
         else:
             return "Insufficient funds or invalid amount."
 
-# Creating an object
 account = BankAccount("Alice", 1000)
 
 # Accessing public attribute
