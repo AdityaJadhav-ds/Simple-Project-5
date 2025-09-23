@@ -22,15 +22,10 @@ class BankAccount:
 
 account = BankAccount("Alice", 1000)
 
-
 print(account.owner)  
-
-
-
-
 
 print(account.get_balance()) 
 
+print(account.deposit(500)) 
 
-print(account.deposit(500))   
 print(account.withdraw(200))  
